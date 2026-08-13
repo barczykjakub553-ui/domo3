@@ -4,15 +4,24 @@ with price filter + sorting, sklep/aranzacje landings, content pages.
 Reuses the template components; deployed output is pure static HTML."""
 import json, html, os
 from collections import OrderedDict
+from nameclean import clean_name, infer_brand
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 SITE = os.path.abspath(os.path.join(HERE, "..", "site"))
 products = json.load(open(os.path.join(HERE, "products_full.json"), encoding="utf-8"))
+brands = json.load(open(os.path.join(HERE, "brands.json"), encoding="utf-8"))
 
 def esc(s): return html.escape(s or "", quote=True)
 def slug_of(url): return url.rstrip("/").split("/")[-1]
+def _img_aris(p):
+    return any("aris" in (u or "").lower() and "paris" not in (u or "").lower()
+               for u in [p.get("img", "")] + p.get("imgs", []))
 for p in products:
     p["slug"] = slug_of(p["url"])
+    p["brand"] = brands.get(p["slug"]) or infer_brand(p["name"], p["slug"])
+# Drop the Aris Concept brand entirely (by scraped brand or legacy image URL).
+products = [p for p in products
+           if not ((p.get("brand") or "").lower().startswith("aris") or _img_aris(p))]
 
 CATS = OrderedDict([
     ("sofy", ("Sofy i narożniki", "Kanapy, narożniki, sofy klasyczne i biurowe",
@@ -54,6 +63,9 @@ def primary_cat(p):
     for c, (_, _, s) in CATS.items():
         if c != "meble" and in_cat(p, s): return c
     return "meble"
+# Tidy display names now that the primary category (fallback "rodzaj") is known.
+for p in products:
+    p["name"] = clean_name(p["name"], p.get("brand"), primary_cat(p))
 
 # ---------------- chrome ----------------
 CAT_LINKS = "".join(f'<a href="k-{c}.html">{esc(t)}</a>' for c,(t,_,_) in CATS.items())
@@ -196,6 +208,7 @@ def product_data(p):
     cats_meta = " · ".join(CATS[c][0] for c in CATS if c != "meble" and in_cat(p, CATS[c][2])) or "Meble"
     return {
         "name": p["name"],
+        "brand": p.get("brand"),
         "img": p["img"],
         "imgs": p.get("imgs") or [p["img"]],
         "desc": p.get("desc") or [],
