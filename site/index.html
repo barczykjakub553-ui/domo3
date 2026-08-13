@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Domokoncept — salon meblowy w Szczecinie. Sofy, stoły, krzesła i oświetlenie polskich i skandynawskich marek. Poczuj się jak u siebie w domu." />
+  <title>Domokoncept — salon meblowy w Szczecinie</title>
+  <link rel="icon" href="images/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=4" />
+</head>
+<body>
+  <!-- Custom cursor (JS-driven, hidden on touch devices) -->
+  <div class="cursor" data-cursor aria-hidden="true">
+    <div class="cursor__dot"></div>
+    <div class="cursor__ring"></div>
+  </div>
+
+  <!-- Scroll progress bar -->
+  <div class="progress" data-progress aria-hidden="true"></div>
+
+  <div class="topbar"><div class="container topbar__inner">
+    <span>Salon meblowy w Szczecinie · niespełna 5 minut od centrum</span>
+    <span class="topbar__hours">Pon–Pt 10:30–17:00 · Sob 10:00–14:00</span>
+  </div></div>
+
+  <!-- ============ HEADER ============ -->
+  <header class="header" data-header>
+    <div class="container header__inner">
+      <a href="#top" class="logo" data-cursor-hover>DOMOKONCEPT</a>
+
+      <nav class="nav" data-nav>
+        <span class="nav__item has-dropdown">
+          <a href="sklep.html" class="nav__link" data-cursor-hover>Sklep</a>
+          <span class="dropdown">
+            <a href="k-sofy.html">Sofy i narożniki</a>
+            <a href="k-sofy-modulowe.html">Sofy modułowe</a>
+            <a href="k-stoly.html">Stoły</a>
+            <a href="k-stoliki.html">Stoliki kawowe</a>
+            <a href="k-krzesla.html">Krzesła</a>
+            <a href="k-fotele.html">Fotele</a>
+            <a href="k-hokery.html">Krzesła barowe i hokery</a>
+            <a href="k-komody.html">Komody i komody RTV</a>
+            <a href="k-oswietlenie.html">Oświetlenie</a>
+            <a href="k-dywany.html">Dywany</a>
+            <a href="k-dodatki.html">Dodatki</a>
+            <a href="k-meble.html">Meble i pozostałe</a>
+            <a href="k-outlet.html">Outlet</a>
+          </span>
+        </span>
+        <span class="nav__item has-dropdown">
+          <a href="aranzacje.html" class="nav__link" data-cursor-hover>Aranżacje</a>
+          <span class="dropdown">
+            <a href="a-sypialnia.html">Sypialnia</a>
+            <a href="a-salon.html">Salon</a>
+            <a href="a-jadalnia.html">Jadalnia</a>
+            <a href="a-przedpokoj.html">Przedpokój</a>
+          </span>
+        </span>
+        <a href="marki.html" class="nav__link" data-cursor-hover>Marki</a>
+        <a href="o-nas.html" class="nav__link" data-cursor-hover>O nas</a>
+        <a href="kontakt.html" class="nav__link" data-cursor-hover>Kontakt</a>
+      </nav>
+
+      <div class="header__actions">
+        <a href="tel:+48511891500" class="btn btn--small" data-cursor-hover>Zadzwoń · 511 891 500</a>
+        <button class="burger" data-burger aria-label="Menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ============ HERO CAROUSEL ============ -->
+    <section class="hero" aria-label="Wyróżnione">
+      <div class="hero__carousel" data-carousel data-autoplay="6000">
+        <div class="hero__track" data-track>
+
+          <article class="hero__slide" style="--slide:1">
+            <div class="hero__media" data-parallax="0.15"></div>
+            <div class="container hero__content">
+              <p class="eyebrow" data-reveal>Salon meblowy · Szczecin</p>
+              <h1 class="hero__title" data-reveal>Meble, które<br>tworzą dom</h1>
+              <p class="hero__lead" data-reveal>Skandynawski i polski design — starannie dobrane sofy, stoły i dodatki, z którymi zostajesz na lata, nie na sezon.</p>
+              <div class="hero__cta" data-reveal>
+                <a href="#featured" class="btn" data-cursor-hover>Zobacz kolekcję</a>
+                <a href="#story" class="btn btn--ghost" data-cursor-hover>O nas</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="hero__slide" style="--slide:2">
+            <div class="hero__media" data-parallax="0.15"></div>
+            <div class="container hero__content">
+              <p class="eyebrow" data-reveal>…inna strona wnętrza</p>
+              <h1 class="hero__title" data-reveal>Poczuj się<br>jak u siebie</h1>
+              <p class="hero__lead" data-reveal>Odwiedź nasz salon, usiądź na sofie, napij się kawy. U nas ogląda się meble bez pośpiechu.</p>
+              <div class="hero__cta" data-reveal>
+                <a href="#story" class="btn" data-cursor-hover>Odwiedź salon</a>
+                <a href="#featured" class="btn btn--ghost" data-cursor-hover>Bestsellery</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="hero__slide" style="--slide:3">
+            <div class="hero__media" data-parallax="0.15"></div>
+            <div class="container hero__content">
+              <p class="eyebrow" data-reveal>Wyprzedaż do -60%</p>
+              <h1 class="hero__title" data-reveal>Piękne wnętrze<br>w zasięgu ręki</h1>
+              <p class="hero__lead" data-reveal>Wybrane sofy, narożniki i stoły w wyjątkowych cenach. Wygodne raty 0% z Comfino.</p>
+              <div class="hero__cta" data-reveal>
+                <a href="#featured" class="btn" data-cursor-hover>Zobacz ofertę</a>
+                <a href="#newsletter" class="btn btn--ghost" data-cursor-hover>Kontakt</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="hero__dots" data-dots aria-label="Slajdy"></div>
+      </div>
+
+      <a href="#collections" class="scroll-hint" data-cursor-hover aria-label="Przewiń w dół">
+        <span>Przewiń</span>
+        <span class="scroll-hint__line"></span>
+      </a>
+    </section>
+
+    <!-- ============ MARQUEE STRIP ============ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Darmowa dostawa w Szczecinie</span><span>·</span>
+        <span>Raty 0% z Comfino</span><span>·</span>
+        <span>Wyprzedaż do -60%</span><span>·</span>
+        <span>Polski i skandynawski design</span><span>·</span>
+        <span>Darmowa dostawa w Szczecinie</span><span>·</span>
+        <span>Raty 0% z Comfino</span><span>·</span>
+        <span>Wyprzedaż do -60%</span><span>·</span>
+        <span>Polski i skandynawski design</span><span>·</span>
+      </div>
+    </div>
+
+    <!-- ============ COLLECTIONS ============ -->
+    <section class="section" id="collections">
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow" data-reveal>Kolekcje</p>
+          <h2 class="section__title" data-reveal>Znajdź swój kąt</h2>
+        </header>
+
+        <div class="cards">
+          <a href="k-sofy.html" class="card" data-reveal data-cursor-hover style="--i:0">
+            <div class="card__media card__media--a"></div>
+            <div class="card__body">
+              <h3>Sofy</h3>
+              <p>Kanapy, narożniki i sofy modułowe</p>
+              <span class="card__link">Zobacz →</span>
+            </div>
+          </a>
+          <a href="k-stoly.html" class="card" data-reveal data-cursor-hover style="--i:1">
+            <div class="card__media card__media--b"></div>
+            <div class="card__body">
+              <h3>Stoły</h3>
+              <p>Stoły, stoliki kawowe i konsole</p>
+              <span class="card__link">Zobacz →</span>
+            </div>
+          </a>
+          <a href="k-krzesla.html" class="card" data-reveal data-cursor-hover style="--i:2">
+            <div class="card__media card__media--c"></div>
+            <div class="card__body">
+              <h3>Krzesła i fotele</h3>
+              <p>Krzesła, fotele i hokery barowe</p>
+              <span class="card__link">Zobacz →</span>
+            </div>
+          </a>
+          <a href="k-oswietlenie.html" class="card" data-reveal data-cursor-hover style="--i:3">
+            <div class="card__media card__media--d"></div>
+            <div class="card__body">
+              <h3>Oświetlenie</h3>
+              <p>Lampy, dywany i dodatki do wnętrz</p>
+              <span class="card__link">Zobacz →</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FEATURED PRODUCTS CAROUSEL ============ -->
+    <section class="section section--tint" id="featured">
+      <div class="container">
+        <header class="section__head section__head--row">
+          <div>
+            <p class="eyebrow" data-reveal>Bestsellery</p>
+            <h2 class="section__title" data-reveal>Pokochane w tym sezonie</h2>
+          </div>
+          <div class="carousel__controls" data-reveal>
+            <button class="ctrl" data-prev aria-label="Poprzedni" data-cursor-hover>←</button>
+            <button class="ctrl" data-next aria-label="Następny" data-cursor-hover>→</button>
+          </div>
+        </header>
+      </div>
+
+      <!-- Native scroll-snap carousel: no library, drag / swipe / wheel all work -->
+      <div class="products" data-drag-carousel>
+        <div class="products__track" data-drag-track>
+          <article class="product" data-cursor-hover>
+            <div class="product__media product__media--1"><span class="product__tag">Flexlux</span></div>
+            <div class="product__info"><h3>Sofa Voluzzi</h3><p>3-osobowa · softBeige</p><strong>Oferta na zapytanie</strong></div>
+          </article>
+          <article class="product" data-cursor-hover>
+            <div class="product__media product__media--2"><span class="product__tag">Nowość</span></div>
+            <div class="product__info"><h3>Sofa Nordic</h3><p>Vilmers · tkanina</p><strong>Oferta na zapytanie</strong></div>
+          </article>
+          <article class="product" data-cursor-hover>
+            <div class="product__media product__media--3"></div>
+            <div class="product__info"><h3>Sofa Larvik</h3><p>Vilmers · 3-osobowa</p><strong>Oferta na zapytanie</strong></div>
+          </article>
+          <article class="product" data-cursor-hover>
+            <div class="product__media product__media--4"></div>
+            <div class="product__info"><h3>Sofa Alps</h3><p>Vilmers · skandynawska</p><strong>Oferta na zapytanie</strong></div>
+          </article>
+          <article class="product" data-cursor-hover>
+            <div class="product__media product__media--5"><span class="product__tag">Selfia</span></div>
+            <div class="product__info"><h3>Stół LEVEL</h3><p>Rozkładany · dębowy</p><strong>Oferta na zapytanie</strong></div>
+          </article>
+          <article class="product" data-cursor-hover>
+            <div class="product__media product__media--6"><span class="product__tag">SITS</span></div>
+            <div class="product__info"><h3>Fotel Alex</h3><p>Z zagłówkiem · velvet</p><strong>Oferta na zapytanie</strong></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ STORY / PARALLAX ============ -->
+    <section class="story" id="story">
+      <div class="container story__grid">
+        <div class="story__media" data-parallax="0.18"></div>
+        <div class="story__text">
+          <p class="eyebrow" data-reveal>O nas</p>
+          <h2 class="section__title" data-reveal>Więcej niż<br>salon meblowy</h2>
+          <p data-reveal>Domokoncept to niespełna pięć minut od centrum Szczecina. Nie urządzamy się jak typowy sklep — meble prezentujemy w naturalnych aranżacjach, w których można usiąść, dotknąć materiału i poczuć się jak u siebie w domu. Wybieramy sprawdzone polskie i skandynawskie marki, które służą przez lata.</p>
+          <div class="stats" data-reveal>
+            <div class="stat"><strong data-count="10">0</strong><span>marek premium</span></div>
+            <div class="stat"><strong data-count="5">0</strong><span>min od centrum</span></div>
+            <div class="stat"><strong data-count="11">0</strong><span>kategorii mebli</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TESTIMONIALS CAROUSEL ============ -->
+    <!-- ponytail: przykładowe opinie — podmień na prawdziwe recenzje klientów przed publikacją -->
+    <section class="section" id="reviews">
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow" data-reveal>Opinie</p>
+          <h2 class="section__title" data-reveal>Słowa z prawdziwych wnętrz</h2>
+        </header>
+
+        <div class="quotes" data-carousel data-autoplay="5000">
+          <div class="quotes__track" data-track>
+            <figure class="quote">
+              <blockquote>„Kawa, spokój i zero presji. Sofę wybieraliśmy godzinę i nikt nas nie poganiał. Do dziś to pierwszy mebel, który komentują goście.”</blockquote>
+              <figcaption><strong>Marta K.</strong> · Szczecin</figcaption>
+            </figure>
+            <figure class="quote">
+              <blockquote>„Stół dębowy dojechał idealnie zapakowany, a doradztwo przy wyborze tkaniny było bezcenne. Widać, że znają się na tym, co sprzedają.”</blockquote>
+              <figcaption><strong>Daniel R.</strong> · Police</figcaption>
+            </figure>
+            <figure class="quote">
+              <blockquote>„Skandynawskie marki w jednym miejscu i raty 0%. Cały salon urządziliśmy tu, od narożnika po lampy. Polecamy każdemu.”</blockquote>
+              <figcaption><strong>Sophie L.</strong> · Goleniów</figcaption>
+            </figure>
+          </div>
+          <div class="quotes__dots" data-dots aria-label="Opinie"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ NEWSLETTER / CTA (dark) ============ -->
+    <section class="cta" id="newsletter">
+      <div class="container cta__inner">
+        <h2 class="cta__title" data-reveal>Nowości i inspiracje<br>prosto do skrzynki</h2>
+        <p data-reveal>Zaproszenia na wydarzenia w salonie, nowe kolekcje i podpowiedzi aranżacyjne. Bez spamu.</p>
+        <form class="cta__form" data-reveal onsubmit="return false">
+          <input type="email" placeholder="twoj@email.pl" aria-label="E-mail" required />
+          <button class="btn" type="submit" data-cursor-hover>Zapisz się</button>
+        </form>
+        <p class="cta__fine" data-reveal>Zapisując się akceptujesz naszą politykę prywatności. Kontakt: salon@domokoncept.pl · +48 511 891 500</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <span class="logo">DOMOKONCEPT</span>
+        <p>…inna strona wnętrza. Salon meblowy w Szczecinie.</p>
+      </div>
+      <div class="footer__col">
+        <h4>Sklep</h4>
+        <a href="k-sofy.html" data-cursor-hover>Sofy i narożniki</a>
+        <a href="k-stoly.html" data-cursor-hover>Stoły</a>
+        <a href="k-krzesla.html" data-cursor-hover>Krzesła</a>
+        <a href="sklep.html" data-cursor-hover>Wszystkie kategorie</a>
+      </div>
+      <div class="footer__col">
+        <h4>Firma</h4>
+        <a href="o-nas.html" data-cursor-hover>O nas</a>
+        <a href="marki.html" data-cursor-hover>Marki</a>
+        <a href="comfino.html" data-cursor-hover>Raty Comfino</a>
+        <a href="regulamin.html" data-cursor-hover>Regulamin</a>
+        <a href="polityka-prywatnosci.html" data-cursor-hover>Polityka prywatności</a>
+      </div>
+      <div class="footer__col">
+        <h4>Kontakt</h4>
+        <a href="tel:+48511891500" data-cursor-hover>+48 511 891 500</a>
+        <a href="mailto:salon@domokoncept.pl" data-cursor-hover>salon@domokoncept.pl</a>
+        <a href="kontakt.html" data-cursor-hover>Szczecin · 5 min od centrum</a>
+        <a href="https://instagram.com/domokoncept" target="_blank" rel="noopener" data-cursor-hover>Instagram</a>
+      </div>
+    </div>
+    <div class="container footer__bar">
+      <span>© 2026 Domokoncept — salon meblowy w Szczecinie.</span>
+      <span>Poczuj się jak u siebie w domu.</span>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+  <script src="shop.js"></script>
+</body>
+</html>

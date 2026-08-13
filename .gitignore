@@ -1,0 +1,23 @@
+# macOS
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+
+# Python (build script: _build/generate.py)
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Editors / IDE
+.vscode/
+.idea/
+*.swp
+
+# Logs / temp
+*.log
+tmp/
+
+# NOTE: site/ is the generated, deployable website — keep it tracked.
+#       _build/*.json are the source data — keep them tracked.
