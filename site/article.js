@@ -13,7 +13,7 @@
 
   const slug = new URLSearchParams(location.search).get('a');
   let index;
-  try { index = await (await fetch('articles.json')).json(); }
+  try { index = window.ARTICLES || await (await fetch('articles.json')).json(); }
   catch (e) { notFound(); return; }
   const a = slug && index[slug];
   if (!a) { notFound(); return; }

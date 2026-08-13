@@ -1,21 +1,5 @@
 [
  {
-  "url": "https://domokoncept.pl/produkt/sofa-sprint-aris/",
-  "name": "Sofa Sprint",
-  "img": "https://domokoncept.pl/wp-content/uploads/Sprint-Sofa-aranzacje-600x600.jpg",
-  "price": "5 049,00 zł",
-  "cats": [
-   "luksusowe-meble",
-   "meble",
-   "sofa-modulowa",
-   "sofa-narozna",
-   "sofy",
-   "sofy-biurowe",
-   "sofy-nowoczesne"
-  ],
-  "rooms": []
- },
- {
   "url": "https://domokoncept.pl/produkt/tribeca/",
   "name": "Sofa Tetris",
   "img": "https://domokoncept.pl/wp-content/uploads/cv-600x600.jpg",
@@ -274,19 +258,6 @@
    "sofa-modulowa",
    "sofy",
    "sofy-nowoczesne"
-  ],
-  "rooms": []
- },
- {
-  "url": "https://domokoncept.pl/produkt/sofa-luksusowa-bovary/",
-  "name": "Sofa Bovary",
-  "img": "https://domokoncept.pl/wp-content/uploads/Bovary-sofa-luksusowa-aris-concept-600x600.jpg",
-  "price": "24 949,00 zł",
-  "cats": [
-   "luksusowe-meble",
-   "sofa-modulowa",
-   "sofy",
-   "sofy-klasyczne"
   ],
   "rooms": []
  },
@@ -2991,20 +2962,6 @@
   "cats": [
    "fotele",
    "sofy"
-  ],
-  "rooms": []
- },
- {
-  "url": "https://domokoncept.pl/produkt/skorzany-fotel-magnum/",
-  "name": "Fotel Magnum",
-  "img": "https://domokoncept.pl/wp-content/uploads/skurzany-fotel-magnum-ARISconcept-600x600.jpg",
-  "price": "4 699,00 zł",
-  "cats": [
-   "fotele",
-   "luksusowe-meble",
-   "sofy",
-   "sofy-biurowe",
-   "sofy-klasyczne"
   ],
   "rooms": []
  },
@@ -6496,19 +6453,6 @@
   "rooms": []
  },
  {
-  "url": "https://domokoncept.pl/produkt/agami-naroznik/",
-  "name": "Sofa Agami",
-  "img": "https://domokoncept.pl/wp-content/uploads/agami-sofa-narożnik-arisconcept-1-600x600.jpg",
-  "price": "5 798,00 zł",
-  "cats": [
-   "sofa-modulowa",
-   "sofa-narozna",
-   "sofa-rozkladana-z-funkcja-spania",
-   "sofy"
-  ],
-  "rooms": []
- },
- {
   "url": "https://domokoncept.pl/produkt/sofa-airone/",
   "name": "Sofa Airone",
   "img": "https://domokoncept.pl/wp-content/uploads/airone_sofa_nowoczesna-300x300.jpg",
@@ -6774,19 +6718,6 @@
   "rooms": []
  },
  {
-  "url": "https://domokoncept.pl/produkt/sofa-canbera/",
-  "name": "Sofa Canbera",
-  "img": "https://domokoncept.pl/wp-content/uploads/modułowa-comforty-sofa-canbera.jpg",
-  "price": "8 700,00 zł",
-  "cats": [
-   "sofa-modulowa",
-   "sofa-narozna",
-   "sofy",
-   "sofy-nowoczesne"
-  ],
-  "rooms": []
- },
- {
   "url": "https://domokoncept.pl/produkt/sofa-carlotta/",
   "name": "Sofa Carlotta",
   "img": "https://domokoncept.pl/wp-content/uploads/luksusowa-sofa-Carlotta-600x600.jpg",
@@ -6922,20 +6853,6 @@
   "rooms": []
  },
  {
-  "url": "https://domokoncept.pl/produkt/sofa-diva/",
-  "name": "Sofa Diva",
-  "img": "https://domokoncept.pl/wp-content/uploads/diva-sofa-arisconcept-600x600.jpg",
-  "price": "12 849,00 zł",
-  "cats": [
-   "sofa-narozna",
-   "sofa-rozkladana-z-funkcja-spania",
-   "sofy",
-   "sofy-biurowe",
-   "sofy-klasyczne"
-  ],
-  "rooms": []
- },
- {
   "url": "https://domokoncept.pl/produkt/sofa-doblo/",
   "name": "Sofa Doblo",
   "img": "https://domokoncept.pl/wp-content/uploads/doblo-sofa-1-600x600.jpg",
@@ -6957,46 +6874,6 @@
    "meble",
    "sofa-modulowa",
    "sofa-narozna",
-   "sofy",
-   "sofy-nowoczesne"
-  ],
-  "rooms": []
- },
- {
-  "url": "https://domokoncept.pl/produkt/sofa-ellica/",
-  "name": "Sofa Ellica",
-  "img": "https://domokoncept.pl/wp-content/uploads/luksusowa-sofa-Ellica-600x600.jpg",
-  "price": "9 349,00 zł",
-  "cats": [
-   "sofa-rozkladana-z-funkcja-spania",
-   "sofy",
-   "sofy-klasyczne"
-  ],
-  "rooms": []
- },
- {
-  "url": "https://domokoncept.pl/produkt/sofa-energy/",
-  "name": "Sofa Energy",
-  "img": "https://domokoncept.pl/wp-content/uploads/sofa-modułowa-Energy-600x600.jpg",
-  "price": "6 999,00 zł",
-  "cats": [
-   "sofa-modulowa",
-   "sofa-narozna",
-   "sofy",
-   "sofy-biurowe",
-   "sofy-nowoczesne"
-  ],
-  "rooms": []
- },
- {
-  "url": "https://domokoncept.pl/produkt/sofa-evolution/",
-  "name": "Sofa Evolution",
-  "img": "https://domokoncept.pl/wp-content/uploads/Sofa-Evolution-arisconcept-600x600.jpg",
-  "price": "5 399,00 zł",
-  "cats": [
-   "sofa-modulowa",
-   "sofa-narozna",
-   "sofa-rozkladana-z-funkcja-spania",
    "sofy",
    "sofy-nowoczesne"
   ],
@@ -7253,18 +7130,6 @@
   ]
  },
  {
-  "url": "https://domokoncept.pl/produkt/sofa-levit/",
-  "name": "Sofa Levit",
-  "img": "https://domokoncept.pl/wp-content/uploads/nowoczesna-comforty-sofa-levit-1.jpg",
-  "price": "5 900,00 zł",
-  "cats": [
-   "sofy",
-   "sofy-biurowe",
-   "sofy-nowoczesne"
-  ],
-  "rooms": []
- },
- {
   "url": "https://domokoncept.pl/produkt/sofa-linnea/",
   "name": "Sofa Linnea",
   "img": "https://domokoncept.pl/wp-content/uploads/2023/05/LINNEA_technical_3seater_caleido3790_light_beige_1-300x300.jpg",
@@ -7483,21 +7348,6 @@
   "rooms": []
  },
  {
-  "url": "https://domokoncept.pl/produkt/sofa-oxford/",
-  "name": "Sofa Oxford",
-  "img": "https://domokoncept.pl/wp-content/uploads/sofa-narożna-oxford-600x600.jpg",
-  "price": "3 299,00 zł",
-  "cats": [
-   "sofa-modulowa",
-   "sofa-narozna",
-   "sofa-rozkladana-z-funkcja-spania",
-   "sofy",
-   "sofy-biurowe",
-   "sofy-nowoczesne"
-  ],
-  "rooms": []
- },
- {
   "url": "https://domokoncept.pl/produkt/sofa-palafitte/",
   "name": "Sofa Palafitte",
   "img": "https://domokoncept.pl/wp-content/uploads/modułowa-szczecin-comforty-sofa-palafitte-3.jpg",
@@ -7531,20 +7381,6 @@
    "sofy",
    "sofy-biurowe",
    "sofy-klasyczne"
-  ],
-  "rooms": []
- },
- {
-  "url": "https://domokoncept.pl/produkt/sofa-pesto/",
-  "name": "Sofa Pesto",
-  "img": "https://domokoncept.pl/wp-content/uploads/wygodna-szczecin-comforty-sofa-pesto-1-pop.jpg",
-  "price": "6 300,00 zł",
-  "cats": [
-   "sofa-modulowa",
-   "sofa-narozna",
-   "sofy",
-   "sofy-biurowe",
-   "sofy-nowoczesne"
   ],
   "rooms": []
  },
@@ -7664,34 +7500,6 @@
    "sofa-modulowa",
    "sofa-rozkladana-z-funkcja-spania",
    "sofy",
-   "sofy-klasyczne",
-   "sofy-nowoczesne"
-  ],
-  "rooms": []
- },
- {
-  "url": "https://domokoncept.pl/produkt/sofa-trivo/",
-  "name": "Sofa Trivo",
-  "img": "https://domokoncept.pl/wp-content/uploads/sofa-arisconcept-Trivo-600x600.jpg",
-  "price": "3 849,00 zł",
-  "cats": [
-   "sofa-modulowa",
-   "sofa-narozna",
-   "sofy",
-   "sofy-nowoczesne"
-  ],
-  "rooms": []
- },
- {
-  "url": "https://domokoncept.pl/produkt/sofa-vanity/",
-  "name": "Sofa Vanity",
-  "img": "https://domokoncept.pl/wp-content/uploads/sofa-Vanity-600x600.jpg",
-  "price": "5 299,00 zł",
-  "cats": [
-   "sofa-modulowa",
-   "sofa-narozna",
-   "sofy",
-   "sofy-biurowe",
    "sofy-klasyczne",
    "sofy-nowoczesne"
   ],
@@ -8808,20 +8616,6 @@
   "cats": [
    "hustawki",
    "meble"
-  ],
-  "rooms": []
- },
- {
-  "url": "https://domokoncept.pl/produkt/nowoczesna-sofa-modulowa-symbio/",
-  "name": "Symbio sofa modułowa",
-  "img": "https://domokoncept.pl/wp-content/uploads/Aris_06_2019_48do863-600x600.jpg",
-  "price": "7 098,00 zł",
-  "cats": [
-   "sofa-modulowa",
-   "sofa-narozna",
-   "sofy",
-   "sofy-biurowe",
-   "sofy-nowoczesne"
   ],
   "rooms": []
  },

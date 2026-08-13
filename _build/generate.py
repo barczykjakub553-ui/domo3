@@ -208,6 +208,9 @@ def product_data(p):
 prod_index = {p["slug"]: product_data(p) for p in products}
 json.dump(prod_index, open(os.path.join(SITE, "products.json"), "w", encoding="utf-8"),
           ensure_ascii=False, separators=(",", ":"))
+# Also as a JS global so product pages work over file:// (fetch is blocked there).
+open(os.path.join(SITE, "products-data.js"), "w", encoding="utf-8").write(
+    "window.PRODUCTS=" + json.dumps(prod_index, ensure_ascii=False, separators=(",", ":")) + ";")
 
 product_shell = f'''<!DOCTYPE html>
 <html lang="pl">
@@ -230,6 +233,7 @@ product_shell = f'''<!DOCTYPE html>
 {FOOTER}
   <script src="main.js"></script>
   <script src="shop.js"></script>
+  <script src="products-data.js"></script>
   <script src="product.js"></script>
 </body>
 </html>
@@ -385,6 +389,8 @@ art_index = {a["slug"]: {"title": a["title"], "img": a.get("img", ""),
              for a in articles}
 json.dump(art_index, open(os.path.join(SITE, "articles.json"), "w", encoding="utf-8"),
           ensure_ascii=False, separators=(",", ":"))
+open(os.path.join(SITE, "articles-data.js"), "w", encoding="utf-8").write(
+    "window.ARTICLES=" + json.dumps(art_index, ensure_ascii=False, separators=(",", ":")) + ";")
 
 article_shell = f'''<!DOCTYPE html>
 <html lang="pl">
@@ -407,6 +413,7 @@ article_shell = f'''<!DOCTYPE html>
 {FOOTER}
   <script src="main.js"></script>
   <script src="shop.js"></script>
+  <script src="articles-data.js"></script>
   <script src="article.js"></script>
 </body>
 </html>
