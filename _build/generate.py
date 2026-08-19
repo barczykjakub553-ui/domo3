@@ -2,9 +2,13 @@
 """Full site generator: product pages (galleries), category/arrangement listings
 with price filter + sorting, sklep/aranzacje landings, content pages.
 Reuses the template components; deployed output is pure static HTML."""
-import json, html, os
-from collections import OrderedDict
+import json, html, os, re
+from collections import OrderedDict, Counter, defaultdict
 from nameclean import clean_name, infer_brand
+
+# Tidy the one clumsy scraped label; keep the rest as-is.
+BRAND_CANON = {"Com40 / Comforty": "Comforty"}
+def brand_slug(b): return re.sub(r"[^a-z0-9]+", "-", b.lower()).strip("-")
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 SITE = os.path.abspath(os.path.join(HERE, "..", "site"))
@@ -18,7 +22,8 @@ def _img_aris(p):
                for u in [p.get("img", "")] + p.get("imgs", []))
 for p in products:
     p["slug"] = slug_of(p["url"])
-    p["brand"] = brands.get(p["slug"]) or infer_brand(p["name"], p["slug"])
+    b = brands.get(p["slug"]) or infer_brand(p["name"], p["slug"])
+    p["brand"] = BRAND_CANON.get(b, b)
 # Drop the Aris Concept brand entirely (by scraped brand or legacy image URL).
 products = [p for p in products
            if not ((p.get("brand") or "").lower().startswith("aris") or _img_aris(p))]
@@ -365,11 +370,39 @@ BRAND_INFO = [
     ("Tamm room","Stoły, krzesła, szafki, komody, konsole i łóżka."),
     ("FAMEG","Legendarne gięte krzesła i stoły, produkowane w Polsce od 1881 r."),
 ]
+# products per brand + one filterable listing page per brand (reuses listing_page)
+brand_products = defaultdict(list)
+for p in products:
+    if p.get("brand"):
+        brand_products[p["brand"]].append(p)
+for b, prods in brand_products.items():
+    prods.sort(key=lambda p: p["name"].lower())
+    listing_page(f"marka-{brand_slug(b)}.html", b,
+                 f"Wszystkie produkty marki {b} dostępne w Domokoncept.", prods,
+                 f'<a href="marki.html">Marki</a> <span>/</span> {esc(b)}', "marki",
+                 f"{b} — produkty marki w salonie meblowym Domokoncept Szczecin.")
+
+# brand tiles: curated copy where we have it, else the top categories the brand covers.
+def _norm(x): return re.sub(r"[^a-z0-9]", "", x.lower())
+CURATED = {_norm(n): d for n, d in BRAND_INFO}
+def brand_desc(b):
+    if _norm(b) in CURATED:
+        return CURATED[_norm(b)]
+    top = [CATS[c][0] for c, _ in Counter(primary_cat(p) for p in brand_products[b]).most_common(3)]
+    return ", ".join(top) + "."
+# curated order first (only brands we actually stock), then the rest by size
+present = set(brand_products)
+curated_order = [b for b in present if any(_norm(b) == _norm(n) for n, _ in BRAND_INFO)]
+curated_order.sort(key=lambda b: next(i for i, (n, _) in enumerate(BRAND_INFO) if _norm(n) == _norm(b)))
+extra = sorted(present - set(curated_order), key=lambda b: -len(brand_products[b]))
+tiles = "\n".join(
+    f'      <a class="brand" href="marka-{brand_slug(b)}.html" data-cursor-hover data-reveal>'
+    f'<h3>{esc(b)}</h3><p>{esc(brand_desc(b))} · {len(brand_products[b])} produktów</p></a>'
+    for b in curated_order + extra)
 marki_body = page_hero("Marki", "Marki, które kochamy", "Sprawdzony polski i skandynawski design — starannie wybrany dla Ciebie") + \
     '\n    <section class="section section--flush"><div class="container"><div class="brand-grid">\n' + \
-    "\n".join(f'      <div class="brand" data-reveal><h3>{esc(n)}</h3><p>{esc(d)}</p></div>' for n,d in BRAND_INFO) + \
-    '\n</div></div></section>'
-write("marki.html", "Marki", "marki", marki_body, "Marki w Domokoncept — Vilmers, SITS, Comforty, Flexlux, Selfia, Take me home, Szyszka, Tamm room, FAMEG.")
+    tiles + '\n</div></div></section>'
+write("marki.html", "Marki", "marki", marki_body, "Marki w Domokoncept — kliknij markę, aby zobaczyć wszystkie jej produkty w sklepie.")
 
 pomoc_body = page_hero("Pomoc", "Pomoc i najczęstsze pytania", "Dostawa, raty, zwroty i kontakt — w jednym miejscu") + '''
     <section class="section section--flush"><div class="container prose">

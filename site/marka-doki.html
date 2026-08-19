@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Marki w Domokoncept — kliknij markę, aby zobaczyć wszystkie jej produkty w sklepie." />
-  <title>Marki — Domokoncept</title>
+  <meta name="description" content="Doki — produkty marki w salonie meblowym Domokoncept Szczecin." />
+  <title>Doki — Domokoncept</title>
   <link rel="icon" href="images/logo.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -43,28 +43,59 @@
   <main class="subpage">
     <section class="page-hero">
       <div class="container">
-        <nav class="breadcrumb" data-reveal><a href="index.html">Home</a> <span>/</span> Marki</nav>
-        <h1 class="page-hero__title" data-reveal>Marki, które kochamy</h1>
-        <p class="page-hero__sub" data-reveal>Sprawdzony polski i skandynawski design — starannie wybrany dla Ciebie </p>
+        <nav class="breadcrumb" data-reveal><a href="index.html">Home</a> <span>/</span> <a href="marki.html">Marki</a> <span>/</span> Doki</nav>
+        <h1 class="page-hero__title" data-reveal>Doki</h1>
+        <p class="page-hero__sub" data-reveal>Wszystkie produkty marki Doki dostępne w Domokoncept. <span class="page-hero__count">8 produktów</span></p>
       </div>
     </section>
-    <section class="section section--flush"><div class="container"><div class="brand-grid">
-      <a class="brand" href="marka-vilmers.html" data-cursor-hover data-reveal><h3>Vilmers</h3><p>Sofy, narożniki i łóżka łączące klasykę z nowoczesnością. · 13 produktów</p></a>
-      <a class="brand" href="marka-sits.html" data-cursor-hover data-reveal><h3>SITS</h3><p>Skandynawskie sofy i fotele — komfort, tkaniny i modułowość. · 73 produktów</p></a>
-      <a class="brand" href="marka-comforty.html" data-cursor-hover data-reveal><h3>Comforty</h3><p>Ikony polskiego designu — sofy, krzesła i łóżka z charakterem. · 69 produktów</p></a>
-      <a class="brand" href="marka-flexlux.html" data-cursor-hover data-reveal><h3>Flexlux</h3><p>Duński design siedzisk premium z dbałością o ergonomię. · 10 produktów</p></a>
-      <a class="brand" href="marka-selfia.html" data-cursor-hover data-reveal><h3>Selfia</h3><p>Drewniane stoły i szafki RTV, w tym rozkładany model LEVEL. · 64 produktów</p></a>
-      <a class="brand" href="marka-take-me-home.html" data-cursor-hover data-reveal><h3>Take Me Home</h3><p>Stoły, krzesła, komody, konsole, regały i łóżka. · 30 produktów</p></a>
-      <a class="brand" href="marka-szyszka.html" data-cursor-hover data-reveal><h3>Szyszka</h3><p>Autorskie stoły, krzesła, hokery, szafki, regały i łóżka. · 18 produktów</p></a>
-      <a class="brand" href="marka-fameg.html" data-cursor-hover data-reveal><h3>Fameg</h3><p>Legendarne gięte krzesła i stoły, produkowane w Polsce od 1881 r. · 107 produktów</p></a>
-      <a class="brand" href="marka-loftdecora.html" data-cursor-hover data-reveal><h3>LoftDecora</h3><p>Stoły, Meble i pozostałe, Stoliki kawowe. · 83 produktów</p></a>
-      <a class="brand" href="marka-paged.html" data-cursor-hover data-reveal><h3>Paged</h3><p>Krzesła, Krzesła barowe i hokery, Stoły. · 80 produktów</p></a>
-      <a class="brand" href="marka-fargotex.html" data-cursor-hover data-reveal><h3>Fargotex</h3><p>Dywany. · 79 produktów</p></a>
-      <a class="brand" href="marka-doki.html" data-cursor-hover data-reveal><h3>Doki</h3><p>Meble i pozostałe, Stoliki kawowe, Krzesła barowe i hokery. · 8 produktów</p></a>
-      <a class="brand" href="marka-misaform.html" data-cursor-hover data-reveal><h3>MisaForm</h3><p>Stoliki kawowe. · 7 produktów</p></a>
-      <a class="brand" href="marka-kosicka.html" data-cursor-hover data-reveal><h3>Kosicka</h3><p>Meble i pozostałe. · 3 produktów</p></a>
-      <a class="brand" href="marka-vzor.html" data-cursor-hover data-reveal><h3>Vzor</h3><p>Krzesła. · 3 produktów</p></a>
-</div></div></section>
+    <section class="section section--flush">
+      <div class="container">
+      <div class="filters" data-filters>
+        <div class="filters__group">
+          <label for="f-sort">Sortuj</label>
+          <select id="f-sort">
+            <option value="default">Domyślne</option>
+            <option value="name">Nazwa: A–Z</option>
+          </select>
+        </div>
+        <span class="filters__count"><strong id="f-count">8</strong> produktów</span>
+      </div>
+        <div class="product-grid" data-grid>
+      <a class="product product--link" href="product.html?p=hoker-ufi" data-cursor-hover data-name="Hoker UFI">
+        <div class="product__media"><img loading="lazy" src="https://domokoncept.pl/wp-content/uploads/2019/11/bDOKI_M_MG_3981-600x600.jpg" alt="Hoker UFI" /></div>
+        <div class="product__info"><h3>Hoker UFI</h3><strong>Oferta na zapytanie</strong></div>
+      </a>
+      <a class="product product--link" href="product.html?p=pufa-ufa" data-cursor-hover data-name="Pufa UFA">
+        <div class="product__media"><img loading="lazy" src="https://domokoncept.pl/wp-content/uploads/2019/11/UFA_studiophoto-3M2WW-1575x1050-1-300x300.jpg" alt="Pufa UFA" /></div>
+        <div class="product__info"><h3>Pufa UFA</h3><strong>Oferta na zapytanie</strong></div>
+      </a>
+      <a class="product product--link" href="product.html?p=rybitwa-doki" data-cursor-hover data-name="Rybitwa">
+        <div class="product__media"><img loading="lazy" src="https://domokoncept.pl/wp-content/uploads/2019/11/Rybitwa-DOKI-Domokoncept-300x300.jpg" alt="Rybitwa" /></div>
+        <div class="product__info"><h3>Rybitwa</h3><strong>Oferta na zapytanie</strong></div>
+      </a>
+      <a class="product product--link" href="product.html?p=arc-stolik-doki" data-cursor-hover data-name="Stolik Arc">
+        <div class="product__media"><img loading="lazy" src="https://domokoncept.pl/wp-content/uploads/2019/11/Arc_WIZUAL_Black-600x600.jpg" alt="Stolik Arc" /></div>
+        <div class="product__info"><h3>Stolik Arc</h3><strong>Oferta na zapytanie</strong></div>
+      </a>
+      <a class="product product--link" href="product.html?p=latte-3" data-cursor-hover data-name="Stolik Latte 3">
+        <div class="product__media"><img loading="lazy" src="https://domokoncept.pl/wp-content/uploads/2019/11/Domokoncept-doki-stolik-latte3-4-300x300.jpg" alt="Stolik Latte 3" /></div>
+        <div class="product__info"><h3>Stolik Latte 3</h3><strong>Oferta na zapytanie</strong></div>
+      </a>
+      <a class="product product--link" href="product.html?p=wieszak-k3" data-cursor-hover data-name="Wieszak K3">
+        <div class="product__media"><img loading="lazy" src="https://domokoncept.pl/wp-content/uploads/2019/11/DOKI-k3_cały-czarny-DOmokoncept-1485x1050-300x300.jpg" alt="Wieszak K3" /></div>
+        <div class="product__info"><h3>Wieszak K3</h3><strong>Oferta na zapytanie</strong></div>
+      </a>
+      <a class="product product--link" href="product.html?p=shadow-wieszak" data-cursor-hover data-name="Wieszak Shadow">
+        <div class="product__media"><img loading="lazy" src="https://domokoncept.pl/wp-content/uploads/2019/11/doki-domokoncept-shadow-2-300x300.jpg" alt="Wieszak Shadow" /></div>
+        <div class="product__info"><h3>Wieszak Shadow</h3><strong>Oferta na zapytanie</strong></div>
+      </a>
+      <a class="product product--link" href="product.html?p=lawka" data-cursor-hover data-name="Ławka Meso">
+        <div class="product__media"><img loading="lazy" src="https://domokoncept.pl/wp-content/uploads/2019/11/ąawka_meso_05-300x300.jpg" alt="Ławka Meso" /></div>
+        <div class="product__info"><h3>Ławka Meso</h3><strong>Oferta na zapytanie</strong></div>
+      </a>
+        </div>
+      </div>
+    </section>
   </main>
   <footer class="footer">
     <div class="container footer__grid">

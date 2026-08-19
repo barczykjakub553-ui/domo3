@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Marki w Domokoncept — kliknij markę, aby zobaczyć wszystkie jej produkty w sklepie." />
-  <title>Marki — Domokoncept</title>
+  <meta name="description" content="Kosicka — produkty marki w salonie meblowym Domokoncept Szczecin." />
+  <title>Kosicka — Domokoncept</title>
   <link rel="icon" href="images/logo.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -43,28 +43,39 @@
   <main class="subpage">
     <section class="page-hero">
       <div class="container">
-        <nav class="breadcrumb" data-reveal><a href="index.html">Home</a> <span>/</span> Marki</nav>
-        <h1 class="page-hero__title" data-reveal>Marki, które kochamy</h1>
-        <p class="page-hero__sub" data-reveal>Sprawdzony polski i skandynawski design — starannie wybrany dla Ciebie </p>
+        <nav class="breadcrumb" data-reveal><a href="index.html">Home</a> <span>/</span> <a href="marki.html">Marki</a> <span>/</span> Kosicka</nav>
+        <h1 class="page-hero__title" data-reveal>Kosicka</h1>
+        <p class="page-hero__sub" data-reveal>Wszystkie produkty marki Kosicka dostępne w Domokoncept. <span class="page-hero__count">3 produktów</span></p>
       </div>
     </section>
-    <section class="section section--flush"><div class="container"><div class="brand-grid">
-      <a class="brand" href="marka-vilmers.html" data-cursor-hover data-reveal><h3>Vilmers</h3><p>Sofy, narożniki i łóżka łączące klasykę z nowoczesnością. · 13 produktów</p></a>
-      <a class="brand" href="marka-sits.html" data-cursor-hover data-reveal><h3>SITS</h3><p>Skandynawskie sofy i fotele — komfort, tkaniny i modułowość. · 73 produktów</p></a>
-      <a class="brand" href="marka-comforty.html" data-cursor-hover data-reveal><h3>Comforty</h3><p>Ikony polskiego designu — sofy, krzesła i łóżka z charakterem. · 69 produktów</p></a>
-      <a class="brand" href="marka-flexlux.html" data-cursor-hover data-reveal><h3>Flexlux</h3><p>Duński design siedzisk premium z dbałością o ergonomię. · 10 produktów</p></a>
-      <a class="brand" href="marka-selfia.html" data-cursor-hover data-reveal><h3>Selfia</h3><p>Drewniane stoły i szafki RTV, w tym rozkładany model LEVEL. · 64 produktów</p></a>
-      <a class="brand" href="marka-take-me-home.html" data-cursor-hover data-reveal><h3>Take Me Home</h3><p>Stoły, krzesła, komody, konsole, regały i łóżka. · 30 produktów</p></a>
-      <a class="brand" href="marka-szyszka.html" data-cursor-hover data-reveal><h3>Szyszka</h3><p>Autorskie stoły, krzesła, hokery, szafki, regały i łóżka. · 18 produktów</p></a>
-      <a class="brand" href="marka-fameg.html" data-cursor-hover data-reveal><h3>Fameg</h3><p>Legendarne gięte krzesła i stoły, produkowane w Polsce od 1881 r. · 107 produktów</p></a>
-      <a class="brand" href="marka-loftdecora.html" data-cursor-hover data-reveal><h3>LoftDecora</h3><p>Stoły, Meble i pozostałe, Stoliki kawowe. · 83 produktów</p></a>
-      <a class="brand" href="marka-paged.html" data-cursor-hover data-reveal><h3>Paged</h3><p>Krzesła, Krzesła barowe i hokery, Stoły. · 80 produktów</p></a>
-      <a class="brand" href="marka-fargotex.html" data-cursor-hover data-reveal><h3>Fargotex</h3><p>Dywany. · 79 produktów</p></a>
-      <a class="brand" href="marka-doki.html" data-cursor-hover data-reveal><h3>Doki</h3><p>Meble i pozostałe, Stoliki kawowe, Krzesła barowe i hokery. · 8 produktów</p></a>
-      <a class="brand" href="marka-misaform.html" data-cursor-hover data-reveal><h3>MisaForm</h3><p>Stoliki kawowe. · 7 produktów</p></a>
-      <a class="brand" href="marka-kosicka.html" data-cursor-hover data-reveal><h3>Kosicka</h3><p>Meble i pozostałe. · 3 produktów</p></a>
-      <a class="brand" href="marka-vzor.html" data-cursor-hover data-reveal><h3>Vzor</h3><p>Krzesła. · 3 produktów</p></a>
-</div></div></section>
+    <section class="section section--flush">
+      <div class="container">
+      <div class="filters" data-filters>
+        <div class="filters__group">
+          <label for="f-sort">Sortuj</label>
+          <select id="f-sort">
+            <option value="default">Domyślne</option>
+            <option value="name">Nazwa: A–Z</option>
+          </select>
+        </div>
+        <span class="filters__count"><strong id="f-count">3</strong> produktów</span>
+      </div>
+        <div class="product-grid" data-grid>
+      <a class="product product--link" href="product.html?p=hustawka-swing-n-1" data-cursor-hover data-name="Swing N.1">
+        <div class="product__media"><img loading="lazy" src="https://domokoncept.pl/wp-content/uploads/swing11-600x600.jpg" alt="Swing N.1" /></div>
+        <div class="product__info"><h3>Swing N.1</h3><strong>Oferta na zapytanie</strong></div>
+      </a>
+      <a class="product product--link" href="product.html?p=hustawka-swing-n-2" data-cursor-hover data-name="Swing N.2">
+        <div class="product__media"><img loading="lazy" src="https://domokoncept.pl/wp-content/uploads/ex7-600x600.jpg" alt="Swing N.2" /></div>
+        <div class="product__info"><h3>Swing N.2</h3><strong>Oferta na zapytanie</strong></div>
+      </a>
+      <a class="product product--link" href="product.html?p=hustawka-swing-n-3" data-cursor-hover data-name="Swing N.3">
+        <div class="product__media"><img loading="lazy" src="https://domokoncept.pl/wp-content/uploads/swing308-600x600.jpg" alt="Swing N.3" /></div>
+        <div class="product__info"><h3>Swing N.3</h3><strong>Oferta na zapytanie</strong></div>
+      </a>
+        </div>
+      </div>
+    </section>
   </main>
   <footer class="footer">
     <div class="container footer__grid">
